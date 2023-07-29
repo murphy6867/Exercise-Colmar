@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Navigator Design ===== */
+
+header {
+    height: 74px;
+    background-color: #FFF;
+}
+
+.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    padding: 0 24px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-container h1 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.academy {
+    color: #9B9B9B;
+    font-weight: 300;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-container li {
+    list-style-type: none;
+    padding: 0 8px;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.15rem;
+}
+
+a:hover {
+   color: #9B9B9B;
+}
+
+li:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+}
+
+li a:active {
+    color: #4A4A4A;
+}
+
+.moble-nav {
+    display: none;
+}
+
+/* ===== Banner Design ===== */
+
+.banner-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #D8D8D8;
+}
+
+.banner-L  {
+    padding: 2.7vw 2.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-L img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner-R {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+}
+
+.banner-R h1 {
+    font-size: 3vw;
+    font-weight: 800;
+    color: #4A4A4A;
+}
+
+.banner-R p {
+    font-size: 2vw;
+    font-weight: 500;
+    color: #4A4A4A;
+    margin: 2rem 0;
+}
+
+.banner-R button {
+    width: 30vw;
+    padding: 1rem 0;
+    background-color: #4A4A4A;
+    border: 0;
+}
+
+.banner-R button:hover {
+    background-color: #7D7D7D;
+}
+
+.banner-R button a {
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 30vw;
+}
+
+/* ===== Information Design ===== */
+
+.information-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.information-L {
+    margin: 34px 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.information-L img {
+    width: 100%;
+}
+
+.information-L h1 {
+    margin: 2vw 0 1.5vw 0;
+    color: #4A4A4A;
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+.information-L p {
+    font-size: 1.2vw;
+}
+
+.information-L :last-child {
+    margin: 2vw 0;
+}
+
+.information-R {
+    margin: 2vw 1.5vw;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D8D8D8;
+    margin: 2px 0;
+}
+
+.info-content:hover {
+    background-color: #D8D8D8;
+}
+
+.info-content img {
+    width: 100%;
+    padding: 1vw;
+}
+
+.info-content div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-content div h1 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.info-content div p {
+    margin: 10px 0;
+    color: #242222;
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.info-content div a {
+    color: #408CE1;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+/* ===== Learning Design ===== */
+
+.start-learning-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEBEC;
+    padding: 0 72px 32px 72px;
+
+}
+
+.learningHeading {
+    margin: 2rem 0;
+    font-size: 3vw;
+    font-weight: 500;
+    color: #4A4A4A;
+}
+
+.learning-content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.learning-details-container {
+    background-color: #FFF;
+    margin: 1rem;
+    height: auto;
+}
+
+.learning-details-container:hover {
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+.learning-details-container :nth-child(1) {
+    max-width: 100%;
+    height: auto;
+}
+
+.learning-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 16px 16px 24px 24px;
+}
+
+.learning-details :nth-child(1) {
+    font-weight: 500;
+    font-size: 1.8vw;
+}
+
+.learning-details :nth-child(2) {
+    font-weight: 400;
+    font-size: 1.2vw;
+    margin: 8px 0;
+    color: #999999;
+}
+
+.learning-details :nth-child(3) {
+    font-weight: 300;
+    font-size: 1vw;
+    margin: 8px 0;
+    color: #999999;
+}
+
+/* ===== Video design ===== */
+
+.thesis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #9B9B9B;
+}
+
+.thesis h1 {
+    margin: 3vw auto;
+    font-size: 3vw;
+    font-weight: 600;
+    color: #4A4A4A;
+}
+
+.video-list-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 0 10px 24px 28px;
+}
+
+.video-container {
+    width: 100%;
+    height: auto;
+    margin-right: 16px;
+}
+
+.thesis-R-container {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis-container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    justify-content: center;
+    align-items: center;
+}
+
+.thesis-container:hover {
+    background-color: #D8D8D8;
+    cursor: pointer;
+    border: 1px solid #897f7f;
+}
+
+.thesis-container img {
+    max-width: 100%;
+    height: auto;
+    padding: 1vw;
+}
+
+.thesis-details-1, .thesis-details-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 16px;
+}
+
+.thesis-details-1 :nth-child(1),
+.thesis-details-1 :nth-child(2),
+.thesis-details-2 :nth-child(1) {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #4A4A4A;
+    padding: 0;
+    margin: 0;
+}
+
+.thesis-details-1 :nth-child(3) {
+    margin-top: 12px;
+}
+
+.thesis-details-1 :nth-child(3),
+.thesis-details-1 :nth-child(4),
+.thesis-details-2 p {
+    color: #6F6F6F;
+    font-size: 1vw;
+}
+
+.thesis-details-2 p {
+    margin-top: 10px;
+}
+
+.bottom-text {
+    display: grid;
+    flex-direction: column;
+    margin: 0 0 0 28px;
+}
+
+.bottom-text :nth-child(1) {
+    margin: 1vw 0 12px 0;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.bottom-text p {
+    font-size: 1.2vw;
+    font-weight: 300;
+    color: #949595;
+}
+
+/* ===== Footer Design ===== */
+
+footer {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    color: #BABBBB;
+    font-size: 1vw;
+}
+
+.terms {
+    display: flex;
+}
+
+.terms p {
+    padding: 0 8px;
+    cursor: pointer;
+}
